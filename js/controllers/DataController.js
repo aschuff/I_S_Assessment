@@ -1,6 +1,6 @@
-app.controller('EventsController', function($scope, $location, EventsService) {
-  EventsService.getTopReddits().then(function (reddits) {
-      $scope.topReddits = reddits.data.data.children
+app.controller('DataController', function($scope, $location, DataService) {
+  DataService.getData().then(function (Items) {
+      $scope.data = Items
     })
 
   // $scope.eventList = EventsService.getEvent();
