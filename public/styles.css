@@ -1,5 +1,5 @@
 body {
-  background-color: aliceblue;
+  background-color: #ADD8E5;
 }
 .container {
   margin-top: 5%;
@@ -9,9 +9,12 @@ body {
   color: #FFF;
 }
 .navbar-fixed-top {
-  background-color: #8C8C8C;
+  background-color: #2e6da4;
   transition: background-color 0.5s linear 0s;
-  opacity: .5;
+  opacity: .8;
+}
+.navbar-fixed-top a {
+  color: #8C8C8C;
 }
 .navbar-fixed-top.opaque {
   background-color: rgba(255,255,255,0);
@@ -22,7 +25,7 @@ body {
   color: #337ab7;
 }
 .navbar-fixed-top a:hover{
-  color: #337ab7;
+  color: #FFF;
   text-decoration: none;
   cursor: pointer;
 }
@@ -31,7 +34,7 @@ body {
   text-decoration: none;
 }
 .navbar-fixed-top.opaque a:hover{
-  color: #337ab7;
+  color: #FFF;
   cursor: pointer;
   text-decoration: none;
 }
