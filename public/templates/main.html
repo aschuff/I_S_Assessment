@@ -7,14 +7,18 @@
   </div>
   <div class="col-md-6 col-md-offset-3">
       <ul class="list-group">
-          <li ng-repeat='data in data' class="list-group-item">ID: {{data.items.id}} Name: {{Items.name}} Sender: {{Items.sender}}<button type="button" ng-click='showit = !showit'class="btn btn-primary">Details</button>
+          <li ng-repeat='data in response' class="list-group-item">
+            ID: {{data.id}} <br>
+            Name: {{data.name}} <br>
+            Sender: {{data.sender}}
+            <button type="button" ng-click='showit = !showit'class="btn btn-primary">Details</button>
           <section ng-show='showit'>
             <p>
-              ID: {{data.id}}
-              Name: {{Items.name}}
-              Sender: {{Items.sender}}
-              Status: {{Items.status}}
-              Message: {{Items.message}}
+              ID: {{data.id}} <br>
+              Name: {{data.name}} <br>
+              Sender: {{data.sender}} <br>
+              Status: {{data.status}} <br>
+              Message: {{data.message}}
             </p>
 <!-- id -->
 <!-- * name

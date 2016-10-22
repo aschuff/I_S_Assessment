@@ -23,7 +23,7 @@ body {
 .navbar-fixed-top a:hover{
   color: #337ab7;
   text-decoration: none;
-  cursor: pointer;  
+  cursor: pointer;
 }
 .navbar-fixed-top.opaque a{
   color: #666;
@@ -44,7 +44,7 @@ button {
   margin-top: 1%;
 }
 .list-group-item {
-  padding: 6% 3% 8% 3%;
+  padding: 6% 3% 0% 3%;
   position: relative;
   display: block;
   margin-bottom: -1px;
@@ -52,6 +52,7 @@ button {
   border: 1px solid #ddd;
   font-size: 18px;
   color: #666;
+  overflow: scroll;
 }
 p {
   float: left;

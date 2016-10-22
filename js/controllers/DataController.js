@@ -1,6 +1,6 @@
 app.controller('DataController', function($scope, $location, DataService) {
-  DataService.getData().then(function (Items) {
-      $scope.data = Items
+  DataService.getData().then(function (response) {
+      $scope.response = response.data.Items
     })
 
   // $scope.eventList = EventsService.getEvent();
