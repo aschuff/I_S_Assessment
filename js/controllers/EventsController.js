@@ -1,5 +1,9 @@
 app.controller('EventsController', function($scope, $location, EventsService) {
-  $scope.eventList = EventsService.getEvent();
+  EventsService.getTopReddits().then(function (reddits) {
+      $scope.topReddits = reddits.data.data.children
+    })
+
+  // $scope.eventList = EventsService.getEvent();
   // $scope.mainEvents = {
   //    event_name: '',
   //    place: '',

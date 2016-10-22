@@ -1,7 +1,14 @@
-<ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
+<div class="col-md-12">
+  <h2>insureSignApp</h2>
+</div>
+<div class="col-md-6">
+    <ul class="list-group">
+        <li ng-repeat='reddit in topReddits' class="list-group-item">{{reddit.data.title}}<button type="button" ng-click='showit = !showit'class="btn btn-primary">Details</button>
+        <section ng-show='showit'>
+          <p>
+            {{reddit.data.author}}
+          </p>
+        </section>
+        </li>
+    </ul>
+</div>
