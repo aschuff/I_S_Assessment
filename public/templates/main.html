@@ -3,9 +3,9 @@
 </nav>
 <div class="container">
   <div class="col-md-12">
-    <h2><img src="images/InsureSign_Logo_small.png" alt="" /></h2>
+    <h1><img src="images/InsureSign_Logo_small.png" alt="" /><span>Demo</span></h1>
   </div>
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col-md-6 col-md-offset-3" id="listContainer">
       <ul class="list-group">
           <li ng-repeat='data in response' class="list-group-item">
             ID: {{data.id}} <br>
@@ -13,6 +13,7 @@
             Sender: {{data.sender}}
             <button type="button" ng-click='showit = !showit'class="btn btn-primary">Details</button>
           <section ng-show='showit'>
+            <hr>
             <p>
               ID: {{data.id}} <br>
               Name: {{data.name}} <br>
@@ -20,11 +21,6 @@
               Status: {{data.status}} <br>
               Message: {{data.message}}
             </p>
-<!-- id -->
-<!-- * name
-* sender
-* status
-* message -->
           </section>
           </li>
       </ul>
